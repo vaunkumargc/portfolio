@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varun Kumar · Systems Engineer</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2042%22%3E%0A%20%20%3Crect%20width%3D%2242%22%20height%3D%2242%22%20rx%3D%229%22%20fill%3D%22%23162d56%22/%3E%0A%20%20%3Crect%20width%3D%2242%22%20height%3D%2242%22%20rx%3D%229%22%20fill%3D%22none%22%20stroke%3D%22rgba%28255%2C255%2C255%2C0.08%29%22%20stroke-width%3D%221%22/%3E%0A%20%20%3Ctext%20x%3D%2213%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2219%22%20font-weight%3D%22700%22%20fill%3D%22%2390c4f0%22%3EV%3C/text%3E%0A%20%20%3Ctext%20x%3D%2229%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2219%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3EK%3C/text%3E%0A%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2042%22%3E%0A%20%20%3Crect%20width%3D%2242%22%20height%3D%2242%22%20rx%3D%229%22%20fill%3D%22%23162d56%22/%3E%0A%20%20%3Crect%20width%3D%2242%22%20height%3D%2242%22%20rx%3D%229%22%20fill%3D%22none%22%20stroke%3D%22rgba%28255%2C255%2C255%2C0.08%29%22%20stroke-width%3D%221%22/%3E%0A%20%20%3Ctext%20x%3D%2213%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2219%22%20font-weight%3D%22700%22%20fill%3D%22%2390c4f0%22%3EV%3C/text%3E%0A%20%20%3Ctext%20x%3D%2229%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2219%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3EK%3C/text%3E%0A%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1e3a6e;--navy-dark:#162d56;--navy-light:#eef3fc;
+  --sky:#2563b0;--sky-light:#ddeaf9;--cobalt:#3b82d0;--cobalt-dark:#2563b0;
+  --white:#fff;--off-white:#f7f9fd;--g50:#f0f4fa;--g100:#e3e9f4;
+  --g300:#a8b8d4;--g500:#637494;--g700:#334165;--g900:#1a2540;
+  --fb:'Source Sans 3',sans-serif;--fd:'Source Serif 4',Georgia,serif;
+  --mw:1080px;--side:60px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--g700);font-family:var(--fb);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;background:var(--navy);border-bottom:3px solid var(--cobalt);box-shadow:0 2px 16px rgba(30,58,110,.18)}
+.ni{max-width:var(--mw);margin:0 auto;padding:0 var(--side);display:flex;align-items:center;justify-content:space-between;height:66px}
+.nl{display:flex;align-items:center;gap:13px;text-decoration:none}
+.lm{width:42px;height:42px;flex-shrink:0}
+.lm svg{width:100%;height:100%;display:block}
+.lw{display:flex;flex-direction:column;line-height:1.15}
+.ln{font-family:var(--fd);font-weight:700;font-size:16px;color:#fff}
+.lt{font-size:10.5px;color:#a8b8d4;letter-spacing:1px;text-transform:uppercase}
+.nls{display:flex;align-items:center;list-style:none;gap:4px}
+.nls a{display:flex;align-items:center;height:40px;padding:0 16px;color:rgba(255,255,255,.75);text-decoration:none;font-size:13.5px;font-weight:600;border-radius:4px;transition:color .18s,background .18s}
+.nls a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.ncw{display:flex;align-items:center;padding-left:8px}
+.nc{background:var(--cobalt);color:#fff;padding:9px 20px;border-radius:4px;text-decoration:none;font-weight:700;font-size:13px;transition:background .18s}
+.nc:hover{background:var(--cobalt-dark)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1e3a6e 0%,#2a4f8c 55%,#1a3568 100%);padding:124px var(--side) 84px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;right:-100px;top:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,208,.15) 0%,transparent 70%);pointer-events:none}
+.hero::before{content:'';position:absolute;left:-60px;bottom:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(30,58,110,.3) 0%,transparent 70%);pointer-events:none}
+.hi{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:center;position:relative;z-index:1}
+.heb{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#a8c8f0;margin-bottom:18px}
+.heb::before{content:'';width:22px;height:2px;background:var(--cobalt);flex-shrink:0}
+h1{font-family:var(--fd);font-size:clamp(40px,5.5vw,66px);font-weight:700;color:#fff;line-height:1.06;letter-spacing:-1px;margin-bottom:8px}
+h1 em{font-style:italic;font-weight:300;color:#a8c8f0}
+.hr{font-size:14px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:2px;text-transform:uppercase;margin-bottom:24px}
+.hb{font-size:17px;color:rgba(255,255,255,.72);line-height:1.78;max-width:520px;margin-bottom:36px;font-weight:300}
+.hbts{display:flex;gap:14px;flex-wrap:wrap}
+.bp{background:var(--cobalt);color:#fff;padding:12px 28px;border-radius:4px;text-decoration:none;font-weight:700;font-size:14px;transition:background .18s,transform .15s;display:inline-block}
+.bp:hover{background:var(--cobalt-dark);transform:translateY(-1px)}
+.bo{background:transparent;color:#fff;padding:11px 28px;border:2px solid rgba(255,255,255,.28);border-radius:4px;text-decoration:none;font-weight:600;font-size:14px;transition:border-color .18s,background .18s;display:inline-block}
+.bo:hover{border-color:rgba(255,255,255,.65);background:rgba(255,255,255,.07)}
+.hc{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:28px 24px;backdrop-filter:blur(12px)}
+.hcl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.1)}
+.sr{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.sr:last-child{border-bottom:none}
+.sl{font-size:12.5px;color:rgba(255,255,255,.55)}
+.sv{font-family:var(--fd);font-size:20px;font-weight:700;color:#fff}
+.sv.hi2{color:#90c4f0}
+
+/* MARQUEE */
+.skb{background:var(--navy-dark);border-bottom:1px solid rgba(255,255,255,.07);overflow:hidden}
+.skt{display:flex;width:max-content;animation:mq 30s linear infinite}
+.skt:hover{animation-play-state:paused}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.skc{display:flex;align-items:center;gap:9px;padding:11px 24px;border-right:1px solid rgba(255,255,255,.07);white-space:nowrap}
+.skcl{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#90c4f0}
+.skct{font-size:12px;color:rgba(255,255,255,.42)}
+
+/* SECTIONS */
+main{background:var(--white)}
+.sec{padding:80px var(--side);max-width:var(--mw);margin:0 auto}
+.sdiv{border:none;border-top:1px solid var(--g100);max-width:var(--mw);margin:0 auto}
+.stint{background:var(--off-white)}
+.sh{display:flex;align-items:center;gap:14px;margin-bottom:48px}
+.stag{font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--cobalt);background:var(--sky-light);padding:4px 10px;border-radius:3px}
+h2{font-family:var(--fd);font-size:30px;font-weight:700;color:var(--navy);letter-spacing:-.3px}
+.hr2{flex:1;height:1px;background:var(--g100)}
+
+/* ABOUT */
+.ag{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:start}
+.al{font-family:var(--fd);font-size:20px;font-weight:300;color:var(--navy);line-height:1.55;margin-bottom:22px;border-left:4px solid var(--cobalt);padding-left:20px}
+.ab p{color:var(--g700);line-height:1.78;margin-bottom:15px;font-size:15.5px}
+.ab strong{color:var(--navy);font-weight:600}
+.as{display:flex;flex-direction:column;gap:18px}
+.card{background:var(--white);border:1px solid var(--g100);border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(30,58,110,.06)}
+.ch{background:var(--navy);padding:11px 18px;font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,.6);text-transform:uppercase}
+.cb{padding:4px 0}
+.ci{display:flex;align-items:center;gap:12px;padding:11px 18px;border-bottom:1px solid var(--g50);font-size:13px;color:var(--g700)}
+.ci:last-child{border-bottom:none}
+.cb2{width:32px;height:32px;background:var(--navy-light);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:var(--navy);flex-shrink:0}
+.cti{display:flex;align-items:center;gap:12px;padding:10px 18px;border-bottom:1px solid var(--g50);font-size:13px;color:var(--g700);text-decoration:none;transition:background .15s}
+.cti:last-child{border-bottom:none}
+.cti:hover{background:var(--off-white)}
+.ico{width:28px;height:28px;background:var(--sky-light);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;color:var(--sky)}
+
+/* EXPERIENCE */
+.tl{display:flex;flex-direction:column;gap:18px}
+.ec{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--g100);border-radius:8px;overflow:hidden;background:var(--white);box-shadow:0 2px 8px rgba(30,58,110,.05);transition:box-shadow .22s}
+.ec:hover{box-shadow:0 6px 24px rgba(30,58,110,.11)}
+.esb{background:var(--navy);padding:28px 20px;display:flex;flex-direction:column;gap:6px}
+.ebg{display:inline-block;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);background:#90c4f0;padding:3px 8px;border-radius:2px;margin-bottom:6px;width:fit-content}
+.edt{font-size:12.5px;color:rgba(255,255,255,.58);line-height:1.5}
+.elc{font-size:11px;color:rgba(255,255,255,.36);margin-top:4px}
+.ebo{padding:28px 30px}
+.ero{font-family:var(--fd);font-size:19px;font-weight:700;color:var(--navy);letter-spacing:-.2px;margin-bottom:3px}
+.eog{font-size:13px;font-weight:600;color:var(--cobalt);margin-bottom:18px}
+.ebl{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.ebl li{font-size:14px;color:var(--g700);line-height:1.72;padding-left:18px;position:relative}
+.ebl li::before{content:'';position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--cobalt);border-radius:50%}
+.ebl li strong{color:var(--navy);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;color:var(--sky);background:var(--sky-light);border:1px solid rgba(37,99,176,.15);padding:3px 10px;border-radius:20px;font-weight:600;cursor:default;transition:background .15s,color .15s}
+.tag:hover{background:var(--sky);color:#fff}
+
+/* EDUCATION */
+.edu{border:1px solid var(--g100);border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(30,58,110,.05);background:var(--white)}
+.edub{padding:36px 40px}
+.edut{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--cobalt);background:var(--sky-light);padding:4px 10px;border-radius:3px;margin-bottom:14px}
+.edud{font-family:var(--fd);font-size:24px;font-weight:700;color:var(--navy);letter-spacing:-.4px;margin-bottom:5px}
+.edus{font-size:14px;color:var(--g500);margin-bottom:22px}
+.educ{display:flex;flex-wrap:wrap;gap:7px}
+.edc{font-size:12.5px;color:var(--g700);background:var(--g50);border:1px solid var(--g100);padding:4px 12px;border-radius:4px}
+
+/* FOOTER */
+footer{background:var(--navy-dark);border-top:3px solid var(--cobalt);padding:30px var(--side)}
+.fi{max-width:var(--mw);margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.fl{font-size:13px;color:rgba(255,255,255,.42)}
+.fl strong{color:rgba(255,255,255,.72)}
+.fls{display:flex;gap:22px}
+.fls a{font-size:13px;color:rgba(255,255,255,.45);text-decoration:none;font-weight:600;transition:color .15s}
+.fls a:hover{color:#fff}
+
+/* ANIMATIONS */
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.heb{opacity:0;animation:fu .55s ease .05s forwards}
+h1{opacity:0;animation:fu .6s ease .15s forwards}
+.hr{opacity:0;animation:fu .55s ease .25s forwards}
+.hb{opacity:0;animation:fu .55s ease .35s forwards}
+.hbts{opacity:0;animation:fu .55s ease .45s forwards}
+.hc{opacity:0;animation:fu .65s ease .28s forwards}
+
+/* CHATBOT */
+.ctrig{position:fixed;bottom:28px;right:28px;z-index:9999;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#1e3a6e,#2563b0);border:none;cursor:pointer;box-shadow:0 4px 24px rgba(30,58,110,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s}
+.ctrig:hover{transform:scale(1.08);box-shadow:0 6px 32px rgba(30,58,110,.55)}
+.ctrig::before,.ctrig::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid #3b82d0;animation:rp 2.5s ease-out infinite;opacity:0;pointer-events:none}
+.ctrig::after{animation-delay:1.25s}
+@keyframes rp{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+.cico{transition:opacity .25s,transform .25s}
+.cico2{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transform:rotate(-90deg) scale(.5);transition:opacity .25s,transform .25s;color:#fff;font-size:22px;font-weight:300;line-height:1}
+.ctrig.on .cico{opacity:0;transform:rotate(90deg) scale(.5)}
+.ctrig.on .cico2{opacity:1;transform:rotate(0) scale(1)}
+.cnd{position:absolute;top:2px;right:2px;width:14px;height:14px;background:#e84040;border-radius:50%;border:2px solid #fff;display:none}
+.cnd.show{display:block;animation:np .4s cubic-bezier(.34,1.56,.64,1)}
+@keyframes np{from{transform:scale(0)}to{transform:scale(1)}}
+
+.cwin{position:fixed;bottom:104px;right:28px;z-index:9998;width:360px;max-height:520px;background:#fff;border-radius:16px;box-shadow:0 16px 56px rgba(30,58,110,.22);display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--g100);transform:translateY(20px) scale(.94);opacity:0;pointer-events:none;transition:transform .3s cubic-bezier(.34,1.56,.64,1),opacity .22s ease}
+.cwin.on{transform:translateY(0) scale(1);opacity:1;pointer-events:all}
+.cwh{background:linear-gradient(135deg,var(--navy),var(--sky));padding:16px 18px;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.cav{width:40px;height:40px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:14px;font-weight:700;color:#fff;flex-shrink:0}
+.cwhn{font-size:14px;font-weight:700;color:#fff}
+.cwhs{font-size:11px;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:5px;margin-top:2px}
+.sd{width:6px;height:6px;background:#4ade80;border-radius:50%;animation:bl 2s ease-in-out infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.3}}
+.cmsg{flex:1;overflow-y:auto;padding:16px 14px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.cmsg::-webkit-scrollbar{width:3px}
+.cmsg::-webkit-scrollbar-thumb{background:var(--g100);border-radius:4px}
+.msg{display:flex;gap:8px;align-items:flex-end}
+.msg.bot{align-self:flex-start;max-width:90%}
+.msg.usr{align-self:flex-end;flex-direction:row-reverse;max-width:90%}
+.mav{width:26px;height:26px;background:var(--navy-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:var(--navy);flex-shrink:0}
+.mb{padding:10px 14px;border-radius:14px;font-size:13.5px;line-height:1.52}
+.msg.bot .mb{background:var(--g50);color:var(--g900);border-bottom-left-radius:4px}
+.msg.usr .mb{background:var(--cobalt);color:#fff;border-bottom-right-radius:4px}
+.tdots{background:var(--g50);border-radius:14px;border-bottom-left-radius:4px;padding:12px 16px;display:flex;gap:5px}
+.tdots span{width:6px;height:6px;background:var(--g300);border-radius:50%;animation:db .9s ease-in-out infinite}
+.tdots span:nth-child(2){animation-delay:.2s}
+.tdots span:nth-child(3){animation-delay:.4s}
+@keyframes db{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-6px)}}
+.qrs{display:flex;flex-wrap:wrap;gap:6px;padding:4px 14px 10px;flex-shrink:0}
+.qr{background:var(--navy-light);color:var(--navy);border:1px solid var(--sky-light);padding:6px 12px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;transition:background .15s,color .15s;font-family:var(--fb)}
+.qr:hover{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
+.cbar{display:flex;align-items:center;gap:8px;padding:12px 14px;border-top:1px solid var(--g100);flex-shrink:0}
+.cinp{flex:1;border:1px solid var(--g100);border-radius:22px;padding:9px 16px;font-size:13.5px;font-family:var(--fb);color:var(--g900);outline:none;background:var(--g50);transition:border-color .15s}
+.cinp:focus{border-color:var(--cobalt);background:#fff}
+.cinp::placeholder{color:var(--g300)}
+.csnd{width:36px;height:36px;background:var(--cobalt);border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s,transform .15s}
+.csnd:hover{background:var(--cobalt-dark);transform:scale(1.08)}
+.tst{position:fixed;bottom:108px;right:28px;z-index:9997;background:var(--g900);color:#fff;padding:12px 18px;border-radius:8px;font-size:13px;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.2);display:flex;align-items:center;gap:8px;transform:translateY(12px);opacity:0;pointer-events:none;transition:transform .3s,opacity .3s;max-width:310px}
+.tst.show{transform:translateY(0);opacity:1}
+
+/* RESPONSIVE */
+@media(max-width:840px){
+  :root{--side:24px}
+  .nls li:not(.ncw) a{display:none}
+  .hi{grid-template-columns:1fr}
+  .hc{display:none}
+  .ag{grid-template-columns:1fr}
+  .ec{grid-template-columns:1fr}
+  .esb{flex-direction:row;flex-wrap:wrap;padding:18px 20px;gap:10px}
+  .fi{flex-direction:column;gap:14px;text-align:center}
+  .cwin{width:calc(100vw - 40px);right:20px;left:20px}
+  .ctrig{right:20px;left:auto;bottom:20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="ni">
+    <a href="#top" class="nl" aria-label="Varun Kumar Home">
+      <div class="lm">
+        <svg viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="42" height="42" rx="9" fill="#162d56"/>
+          <rect width="42" height="42" rx="9" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          <text x="13" y="28" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="700" fill="#90c4f0">V</text>
+          <text x="29" y="28" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="700" fill="white">K</text>
+        </svg>
+      </div>
+      <div class="lw"><span class="ln">Varun Kumar</span><span class="lt">Systems Engineer</span></div>
+    </a>
+    <ul class="nls">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li class="ncw"><a href="mai&#108;to&#58;c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m" class="nc">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<section class="hero">
+  <div class="hi">
+    <div>
+      <div class="heb">United States &middot; Open to Opportunities</div>
+      <h1>Varun<br><em>Kumar</em></h1>
+      <p class="hr">Senior Systems Engineer</p>
+      <p class="hb">4+ years engineering highly available, enterprise-scale platforms in regulated healthcare and financial environments &mdash; specializing in cloud-native AWS, API integration, and SRE practices.</p>
+      <div class="hbts">
+        <a href="#experience" class="bp">View Experience</a>
+        <a href="mai&#108;to&#58;c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m" class="bo">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hc">
+      <div class="hcl">At a Glance</div>
+      <div class="sr"><span class="sl">Platform Uptime</span><span class="sv hi2">99.9%</span></div>
+      <div class="sr"><span class="sl">Daily API Calls</span><span class="sv hi2">1M+</span></div>
+      <div class="sr"><span class="sl">Projects Delivered</span><span class="sv">5+</span></div>
+      <div class="sr"><span class="sl">Years Experience</span><span class="sv">4+</span></div>
+      <div class="sr"><span class="sl">Certifications</span><span class="sv">4</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="skb"><div class="skt">
+  <div class="skc"><span class="skcl">Cloud</span><span class="skct">AWS Lambda &middot; S3 &middot; EventBridge &middot; CloudWatch</span></div>
+  <div class="skc"><span class="skcl">Platforms</span><span class="skct">Kubernetes &middot; Docker &middot; VMware Tanzu</span></div>
+  <div class="skc"><span class="skcl">API</span><span class="skct">Apigee Edge &middot; REST &middot; SOAP &middot; OAuth2</span></div>
+  <div class="skc"><span class="skcl">Observability</span><span class="skct">Splunk &middot; CloudWatch &middot; ServiceNow ITSM</span></div>
+  <div class="skc"><span class="skcl">Data</span><span class="skct">Snowflake &middot; MongoDB &middot; PostgreSQL &middot; OracleDB</span></div>
+  <div class="skc"><span class="skcl">Code</span><span class="skct">Python &middot; Java &middot; JavaScript &middot; SQL &middot; PL-SQL &middot; Shell</span></div>
+  <div class="skc"><span class="skcl">CI/CD</span><span class="skct">Jenkins &middot; GitHub Actions &middot; Docker</span></div>
+  <div class="skc"><span class="skcl">Compliance</span><span class="skct">HIPAA &middot; SOC2 &middot; FDA/EU MDR &middot; IAM</span></div>
+  <div class="skc"><span class="skcl">Cloud</span><span class="skct">AWS Lambda &middot; S3 &middot; EventBridge &middot; CloudWatch</span></div>
+  <div class="skc"><span class="skcl">Platforms</span><span class="skct">Kubernetes &middot; Docker &middot; VMware Tanzu</span></div>
+  <div class="skc"><span class="skcl">API</span><span class="skct">Apigee Edge &middot; REST &middot; SOAP &middot; OAuth2</span></div>
+  <div class="skc"><span class="skcl">Observability</span><span class="skct">Splunk &middot; CloudWatch &middot; ServiceNow ITSM</span></div>
+  <div class="skc"><span class="skcl">Data</span><span class="skct">Snowflake &middot; MongoDB &middot; PostgreSQL &middot; OracleDB</span></div>
+  <div class="skc"><span class="skcl">Code</span><span class="skct">Python &middot; Java &middot; JavaScript &middot; SQL &middot; PL-SQL &middot; Shell</span></div>
+  <div class="skc"><span class="skcl">CI/CD</span><span class="skct">Jenkins &middot; GitHub Actions &middot; Docker</span></div>
+  <div class="skc"><span class="skcl">Compliance</span><span class="skct">HIPAA &middot; SOC2 &middot; FDA/EU MDR &middot; IAM</span></div>
+</div></div>
+
+<main>
+<div id="about">
+  <div class="sec">
+    <div class="sh"><span class="stag">01</span><h2>About Me</h2><div class="hr2"></div></div>
+    <div class="ag">
+      <div>
+        <p class="al">Systems Engineer with a track record of building mission-critical platforms where uptime and data integrity are non-negotiable.</p>
+        <div class="ab">
+          <p>I specialize in <strong>DevOps and SRE practices</strong> for enterprise-scale healthcare and financial platforms &mdash; managing API gateways, container orchestration, and cloud-native pipelines processing over <strong>1 million API calls daily</strong>.</p>
+          <p>My background spans integration platform ownership, observability engineering, <strong>enterprise system migrations in FDA-regulated environments</strong>, and <strong>data-driven process improvement</strong> using Lean Six Sigma in high-volume manufacturing operations.</p>
+          <p>I hold a <strong>Master&rsquo;s in Industrial Engineering from Northeastern University</strong> and certifications in Scrum, AWS Cloud, and Six Sigma.</p>
+        </div>
+      </div>
+      <div class="as">
+        <div class="card">
+          <div class="ch">Certifications</div>
+          <div class="cb">
+            <div class="ci"><div class="cb2">CSM</div>Certified Scrum Master&reg;</div>
+            <div class="ci"><div class="cb2">AWS</div>AWS Cloud Practitioner</div>
+            <div class="ci"><div class="cb2">6&sigma;</div>Six Sigma Green Belt</div>
+            <div class="ci"><div class="cb2">LSS</div>Lean Concepts &amp; Application</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="ch">Contact</div>
+          <div class="cb">
+            <a href="mai&#108;to&#58;c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m" class="cti"><div class="ico">&#9993;</div>c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m</a>
+            <div class="cti"><div class="ico">&#8962;</div>Boston, Massachusetts</div>
+            <a href="https://www.linkedin.com/in/varunkumargc/" target="_blank" class="cti"><div class="ico" style="font-size:10px;font-weight:800">in</div>LinkedIn Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="sdiv">
+
+<div class="stint" id="experience">
+  <div class="sec">
+    <div class="sh"><span class="stag">02</span><h2>Experience</h2><div class="hr2"></div></div>
+    <div class="tl">
+
+      <div class="ec">
+        <div class="esb">
+          <div class="ebg">Current</div>
+          <div class="edt">May 2023 &mdash; Present</div>
+          <div class="elc">Boston, USA</div>
+        </div>
+        <div class="ebo">
+          <div class="ero">Senior Systems Engineer</div>
+          <div class="eog">Blue Cross Blue Shield of Massachusetts</div>
+          <ul class="ebl">
+            <li>Managed end-to-end delivery for <strong>5+ API/EDI integration projects</strong> in healthcare financial transactions.</li>
+            <li>Secured member data across <strong>Apigee Edge and VMware Tanzu</strong> via SSL/TLS rotation and IAM key management, maintaining HIPAA compliance.</li>
+            <li>Maintained <strong>99.9% availability</strong> via 24&times;7 on-call &mdash; leading P1/P2 triage, root cause analysis, and durable remediation.</li>
+            <li>Standardized logging schemas across systems handling <strong>1M+ daily API calls</strong>, enabling cross-system correlation.</li>
+            <li>Built custom <strong>Splunk dashboards and proactive alerting</strong> for API latency and error rates.</li>
+            <li>Designed <strong>serverless ETL pipelines</strong> using AWS Lambda, EventBridge, and S3.</li>
+            <li>Developed <strong>Python automation scripts</strong> for log analysis and data reconciliation.</li>
+            <li>Engineered <strong>ServiceNow ITSM workflows</strong> for automated ticket routing and SLA enforcement.</li>
+          </ul>
+          <div class="tags"><span class="tag">AWS Lambda</span><span class="tag">S3</span><span class="tag">EventBridge</span><span class="tag">Apigee Edge</span><span class="tag">VMware Tanzu</span><span class="tag">Kubernetes</span><span class="tag">Splunk</span><span class="tag">Python</span><span class="tag">ServiceNow</span><span class="tag">MongoDB</span><span class="tag">OracleDB</span><span class="tag">Jenkins</span><span class="tag">REST APIs</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">HIPAA</span></div>
+        </div>
+      </div>
+
+      <div class="ec">
+        <div class="esb">
+          <div class="edt">Jan 2022 &mdash; Aug 2022</div>
+          <div class="elc">Danvers, USA</div>
+        </div>
+        <div class="ebo">
+          <div class="ero">Product Engineer</div>
+          <div class="eog">Johnson &amp; Johnson MedTech &ndash; Abiomed, Inc.</div>
+          <ul class="ebl">
+            <li>Led <strong>enterprise labeling platform migration</strong> &mdash; deployed EnLabel, moving 500+ templates with <strong>100% data accuracy</strong> in a regulated environment.</li>
+            <li>Performed <strong>data mapping and validation</strong>, identifying edge cases in FDA-controlled production.</li>
+            <li>Facilitated <strong>UAT sessions</strong> with quality, production, and operations stakeholders.</li>
+            <li>Resolved persistent <strong>SAP S/4 HANA bottlenecks</strong> in lot sizing and material flow.</li>
+            <li>Authored <strong>SOPs and Visio workflow diagrams</strong>, reducing new-hire ramp-up time by <strong>30%</strong>.</li>
+          </ul>
+          <div class="tags"><span class="tag">SAP S/4 HANA</span><span class="tag">EnLabel</span><span class="tag">Jira</span><span class="tag">MS Visio</span><span class="tag">UAT</span><span class="tag">FDA Controls</span><span class="tag">EU MDR</span></div>
+        </div>
+      </div>
+
+      <div class="ec">
+        <div class="esb">
+          <div class="edt">Jun 2019 &mdash; Nov 2020</div>
+          <div class="elc">Tamil Nadu, India</div>
+        </div>
+        <div class="ebo">
+          <div class="ero">Project Engineer</div>
+          <div class="eog">Sri Andal Paper Mills Private Limited</div>
+          <ul class="ebl">
+            <li>Owned the <strong>Procure-to-Pay (P2P) financial workflow</strong> end-to-end.</li>
+            <li>Designed an <strong>ABC-analysis inventory replenishment system</strong> &mdash; reducing storage overhead by <strong>10%</strong>.</li>
+            <li>Modernized inventory reporting in <strong>Tableau</strong>, replacing static spreadsheets with live dashboards.</li>
+            <li>Audited <strong>10,000+ inventory records</strong>, improving accuracy by <strong>25%</strong>.</li>
+            <li>Applied <strong>Lean Six Sigma (Muda elimination)</strong> to material handling to cut travel time.</li>
+          </ul>
+          <div class="tags"><span class="tag">Tableau</span><span class="tag">Lean Six Sigma</span><span class="tag">ABC Analysis</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Procurement</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="education">
+  <div class="sec">
+    <div class="sh"><span class="stag">03</span><h2>Education</h2><div class="hr2"></div></div>
+    <div class="edu">
+      <div class="edub">
+        <div class="edut">Northeastern University</div>
+        <div class="edud">Master of Science in Industrial Engineering</div>
+        <div class="edus">Boston, Massachusetts &middot; January 2021 &ndash; December 2022</div>
+        <div class="educ">
+          <span class="edc">Project Management</span>
+          <span class="edc">Operational Research</span>
+          <span class="edc">Data Mining in Engineering</span>
+          <span class="edc">Data Management for Analytics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="fi">
+    <div class="fl"><strong>Varun Kumar Gurusamy Chellamuthu</strong><br>Senior Systems Engineer &middot; Boston, MA</div>
+    <div class="fls"><a href="mai&#108;to&#58;c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m">Email</a><a href="https://www.linkedin.com/in/varunkumargc/" target="_blank">LinkedIn</a></div>
+  </div>
+</footer>
+
+<!-- CHATBOT BUTTON -->
+<button class="ctrig" id="ctrig" aria-label="Chat with Varun's assistant">
+  <div class="cico">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+      <path d="M3 5C3 3.9 3.9 3 5 3H21C22.1 3 23 3.9 23 5V17C23 18.1 22.1 19 21 19H15L9 24V19H5C3.9 19 3 18.1 3 17V5Z" fill="white" opacity=".92"/>
+      <path d="M8 10H18M8 14H14" stroke="#1e3a6e" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="cico2">&#10005;</div>
+  <div class="cnd" id="cnd"></div>
+</button>
+
+<!-- CHAT WINDOW -->
+<div class="cwin" id="cwin">
+  <div class="cwh">
+    <div class="cav">VK</div>
+    <div>
+      <div class="cwhn">Varun's Assistant</div>
+      <div class="cwhs"><span class="sd"></span> Online &mdash; replies instantly</div>
+    </div>
+  </div>
+  <div class="cmsg" id="cmsg"></div>
+  <div class="qrs">
+    <button class="qr" onclick="askQ('What are your skills?')">&#128296; Skills</button>
+    <button class="qr" onclick="askQ('Tell me about your experience')">&#128188; Experience</button>
+    <button class="qr" onclick="askQ('What certifications do you have?')">&#127941; Certs</button>
+    <button class="qr" onclick="askQ('Are you open to work?')">&#128077; Open to work?</button>
+    <button class="qr" onclick="askQ('How can I contact you?')">&#9993; Contact</button>
+    <button class="qr" onclick="askQ('Tell me about your education')">&#127979; Education</button>
+  </div>
+  <div class="cbar">
+    <input class="cinp" id="cinp" type="text" placeholder="Ask anything about Varun&hellip;" autocomplete="off">
+    <button class="csnd" id="csnd">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M13 7.5L1 2l2 5.5L1 13l12-5.5z" fill="white"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="tst" id="tst">&#128231; <span id="tstxt">Varun notified &mdash; he'll reply soon!</span></div>
+
+<script>
+/* AI-powered chatbot using Gemini via Vercel serverless function */
+
+var SYSTEM_PROMPT = `You are a professional assistant for Varun Kumar's portfolio website. Answer questions about Varun concisely and professionally. Only answer questions related to Varun's professional background. Here is everything you need to know about Varun:
+
+NAME: Varun Kumar Gurusamy Chellamuthu
+ROLE: Senior Systems Engineer
+LOCATION: United States — willing to relocate anywhere within the US
+EMAIL: contactvarunkumargc[at]gmail.com
+LINKEDIN: https://www.linkedin.com/in/varunkumargc/
+
+OPEN TO WORK: Yes, actively open to:
+- Senior / Staff Systems Engineer
+- Systems Analyst
+- SRE / DevOps Engineer
+- Cloud Infrastructure Engineer
+- API & Integration Platform Lead
+Preferred industries: Healthcare, Fintech, Enterprise SaaS
+
+EXPERIENCE (4+ years):
+1. Senior Systems Engineer @ Blue Cross Blue Shield of Massachusetts (May 2023 - Present)
+   - Managed 5+ API/EDI integration projects in healthcare financial transactions
+   - Maintained 99.9% uptime, 1M+ daily API calls via Apigee Edge & VMware Tanzu
+   - Built serverless ETL pipelines using AWS Lambda, EventBridge, S3
+   - Splunk dashboards for real-time observability, custom alerting
+   - ServiceNow ITSM workflows for automated ticket routing
+   - HIPAA-compliant IAM, SSL/TLS key management
+   - Python automation scripts for log analysis and data reconciliation
+
+2. Product Engineer @ Johnson & Johnson MedTech - Abiomed (Jan 2022 - Aug 2022)
+   - Led enterprise labeling platform migration, deployed EnLabel with 500+ templates, 100% data accuracy
+   - Resolved SAP S/4 HANA bottlenecks
+   - Authored SOPs — reduced new-hire ramp-up by 30%
+   - Supported FDA & EU MDR compliance audits
+
+3. Project Engineer @ Sri Andal Paper Mills (Jun 2019 - Nov 2020)
+   - Owned full Procure-to-Pay (P2P) financial workflow
+   - ABC-analysis inventory system — reduced storage overhead 10%
+   - Tableau dashboards replacing static spreadsheets
+   - Audited 10,000+ records — improved accuracy by 25%
+   - Lean Six Sigma Muda elimination
+
+EDUCATION:
+- M.S. Industrial Engineering, Northeastern University, Boston MA (Jan 2021 - Dec 2022)
+- Coursework: Project Management, Operational Research, Data Mining, Data Management for Analytics
+
+CERTIFICATIONS:
+- Certified Scrum Master (CSM)
+- AWS Certified Cloud Practitioner
+- Six Sigma Green Belt
+- Lean Concepts & Application
+
+SKILLS:
+- Cloud: AWS Lambda, S3, EventBridge, CloudWatch, Kubernetes, Docker, VMware Tanzu
+- API: Apigee Edge, REST, SOAP, OAuth2, Swagger
+- Observability: Splunk, ServiceNow ITSM, CloudWatch
+- Data: Snowflake, MongoDB, PostgreSQL, OracleDB
+- Code: Python, Java, JavaScript, SQL, PL-SQL, Shell
+- CI/CD: Jenkins, GitHub Actions, Docker
+- Compliance: HIPAA, SOC2, FDA/EU MDR, IAM
+
+Keep answers short (2-4 sentences max), warm, and professional. If asked something unrelated to Varun, politely say you can only answer questions about Varun's professional background.`;
+
+var conversationHistory = [];
+var isOpen  = false;
+var greeted = false;
+
+var btn   = document.getElementById('ctrig');
+var win   = document.getElementById('cwin');
+var msgs  = document.getElementById('cmsg');
+var inp   = document.getElementById('cinp');
+var snd   = document.getElementById('csnd');
+var nd    = document.getElementById('cnd');
+var tst   = document.getElementById('tst');
+var tstxt = document.getElementById('tstxt');
+
+btn.addEventListener('click', function () {
+  isOpen = !isOpen;
+  btn.classList.toggle('on', isOpen);
+  win.classList.toggle('on', isOpen);
+  nd.classList.remove('show');
+  if (isOpen && !greeted) {
+    greeted = true;
+    setTimeout(function () {
+      showTyping(function () {
+        addBot("Hi! I am Varun's AI assistant. Ask me anything about his experience, skills, availability, or how to get in touch!");
+      });
+    }, 400);
+  }
+  if (isOpen) { setTimeout(function () { inp.focus(); }, 300); }
+});
+
+inp.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') { doSend(); }
+});
+snd.addEventListener('click', doSend);
+
+function askQ(t) {
+  if (!isOpen) {
+    isOpen = true;
+    btn.classList.add('on');
+    win.classList.add('on');
+    nd.classList.remove('show');
+    greeted = true;
+  }
+  setTimeout(function () { process(t); }, 80);
+}
+
+function doSend() {
+  var t = inp.value.trim();
+  if (!t) { return; }
+  inp.value = '';
+  process(t);
+}
+
+function process(text) {
+  addUser(text);
+  // Add to conversation history
+  conversationHistory.push({ role: 'user', content: text });
+  // Show typing and call AI
+  var typingEl = showTypingReturn();
+  callGemini(text, function(response) {
+    typingEl.remove();
+    addBot(response);
+    conversationHistory.push({ role: 'assistant', content: response });
+  }, function(error) {
+    typingEl.remove();
+    addBot("Sorry, I'm having trouble connecting right now. Please email Varun directly at contactvarunkumargc&#64;gmail&#46;com");
+  });
+}
+
+function callGemini(text, onSuccess, onError) {
+  // Build conversation context for Gemini
+  var contents = conversationHistory.map(function(msg) {
+    return {
+      role: msg.role === 'assistant' ? 'model' : 'user',
+      parts: [{ text: msg.content }]
+    };
+  });
+
+  fetch('/api/chat', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message: text,
+      history: contents.slice(0, -1), // exclude last user msg, already sent separately
+      systemPrompt: SYSTEM_PROMPT
+    })
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(data) {
+    if (data.error) { onError(data.error); return; }
+    onSuccess(data.reply);
+  })
+  .catch(function(err) {
+    console.error('Gemini error:', err);
+    onError(err);
+  });
+}
+
+function addUser(text) {
+  var d = document.createElement('div');
+  d.className = 'msg usr';
+  d.innerHTML = '<div class="mb">' + esc(text) + '</div>';
+  msgs.appendChild(d);
+  scrollDown();
+}
+
+function addBot(html) {
+  var d = document.createElement('div');
+  d.className = 'msg bot';
+  d.innerHTML = '<div class="mav">VK</div><div class="mb">' + html + '</div>';
+  msgs.appendChild(d);
+  scrollDown();
+}
+
+function showTypingReturn() {
+  var d = document.createElement('div');
+  d.className = 'msg bot';
+  d.innerHTML = '<div class="mav">VK</div><div class="tdots"><span></span><span></span><span></span></div>';
+  msgs.appendChild(d);
+  scrollDown();
+  return d;
+}
+
+function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
+
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function showToast(msg) {
+  tstxt.textContent = msg;
+  tst.classList.add('show');
+  setTimeout(function () { tst.classList.remove('show'); }, 4500);
+}
+</script>
+</body>
+</html>
