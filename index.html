@@ -118,7 +118,9 @@ h2{font-family:var(--fd);font-size:30px;font-weight:700;color:var(--navy);letter
 
 /* EDUCATION */
 .edu{border:1px solid var(--g100);border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(30,58,110,.05);background:var(--white)}
-.edub{padding:36px 40px}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:768px){.edu{grid-template-columns:1fr}}
+.edub{background:var(--white);border:1px solid var(--g100);border-radius:12px;padding:36px 40px;box-shadow:0 2px 12px rgba(30,58,110,.06)}
 .edut{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--cobalt);background:var(--sky-light);padding:4px 10px;border-radius:3px;margin-bottom:14px}
 .edud{font-family:var(--fd);font-size:24px;font-weight:700;color:var(--navy);letter-spacing:-.4px;margin-bottom:5px}
 .edus{font-size:14px;color:var(--g500);margin-bottom:22px}
@@ -281,11 +283,11 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
     <div class="sh"><span class="stag">01</span><h2>About Me</h2><div class="hr2"></div></div>
     <div class="ag">
       <div>
-        <p class="al">Systems Engineer with a track record of building mission-critical platforms where uptime and data integrity are non-negotiable.</p>
+        <p class="al">Systems Engineer / Analyst with 4+ years of experience designing, integrating, and supporting enterprise-scale platforms in regulated healthcare and financial environments.</p>
         <div class="ab">
-          <p>I specialize in <strong>DevOps and SRE practices</strong> for enterprise-scale healthcare and financial platforms &mdash; managing API gateways, container orchestration, and cloud-native pipelines processing over <strong>1 million API calls daily</strong>.</p>
-          <p>My background spans integration platform ownership, observability engineering, <strong>enterprise system migrations in FDA-regulated environments</strong>, and <strong>data-driven process improvement</strong> using Lean Six Sigma in high-volume manufacturing operations.</p>
-          <p>I hold a <strong>Master&rsquo;s in Industrial Engineering from Northeastern University</strong> and certifications in Scrum, AWS Cloud, and Six Sigma.</p>
+          <p>I specialize in <strong>API orchestration, cloud-native services, and CI/CD automation</strong> &mdash; translating complex business requirements into reliable, scalable technical solutions. At <strong>Blue Cross Blue Shield of Massachusetts</strong>, I maintain 99.9% uptime for platforms processing over <strong>1 million API calls daily</strong>.</p>
+          <p>My background spans <strong>Java/Python backend development</strong>, integration platform ownership, observability engineering with Splunk and ServiceNow, and enterprise system migrations in <strong>FDA-regulated environments</strong>. I&rsquo;m adept at cross-functional collaboration, incident management, and driving compliance in high-stakes operational environments.</p>
+          <p>I hold a <strong>Master&rsquo;s degree from Northeastern University</strong> and certifications in Scrum Master, AWS Cloud Practitioner, and Six Sigma Green Belt. Open to <strong>Senior Systems Engineer, Systems Analyst, SRE, and Cloud Infrastructure</strong> roles across Healthcare, Fintech, and Enterprise SaaS.</p>
         </div>
       </div>
       <div class="as">
@@ -302,7 +304,7 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
           <div class="ch">Contact</div>
           <div class="cb">
             <a href="mai&#108;to&#58;c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m" class="cti"><div class="ico">&#9993;</div>c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m</a>
-            <div class="cti"><div class="ico">&#8962;</div>Boston, Massachusetts</div>
+            <div class="cti"><div class="ico">&#8962;</div>United States &middot; Open to Relocate</div>
             <a href="https://www.linkedin.com/in/varunkumargc/" target="_blank" class="cti"><div class="ico" style="font-size:10px;font-weight:800">in</div>LinkedIn Profile</a>
           </div>
         </div>
@@ -328,14 +330,15 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
           <div class="ero">Senior Systems Engineer</div>
           <div class="eog">Blue Cross Blue Shield of Massachusetts</div>
           <ul class="ebl">
-            <li>Managed end-to-end delivery for <strong>5+ API/EDI integration projects</strong> in healthcare financial transactions.</li>
-            <li>Secured member data across <strong>Apigee Edge and VMware Tanzu</strong> via SSL/TLS rotation and IAM key management, maintaining HIPAA compliance.</li>
-            <li>Maintained <strong>99.9% availability</strong> via 24&times;7 on-call &mdash; leading P1/P2 triage, root cause analysis, and durable remediation.</li>
-            <li>Standardized logging schemas across systems handling <strong>1M+ daily API calls</strong>, enabling cross-system correlation.</li>
-            <li>Built custom <strong>Splunk dashboards and proactive alerting</strong> for API latency and error rates.</li>
-            <li>Designed <strong>serverless ETL pipelines</strong> using AWS Lambda, EventBridge, and S3.</li>
-            <li>Developed <strong>Python automation scripts</strong> for log analysis and data reconciliation.</li>
-            <li>Engineered <strong>ServiceNow ITSM workflows</strong> for automated ticket routing and SLA enforcement.</li>
+            <li>Developed and maintained <strong>Java-based backend services</strong> and integration components, supporting API workflows, automated health checks, and operational tooling across enterprise healthcare platforms.</li>
+            <li>Maintained <strong>99.9% uptime</strong> for mission-critical healthcare financial platforms by leading 24&times;7 on-call operations and driving rapid incident resolution across complex integration layers.</li>
+            <li>Cut release cycle time by <strong>50%</strong> by engineering end-to-end <strong>CI/CD pipelines</strong> across Tanzu, Apigee, and Edifecs &mdash; leveraging JavaScript and Java automation scripts with reusable libraries.</li>
+            <li>Standardized logging schemas for <strong>1M+ daily API calls</strong>, enabling cross-system correlation in Splunk; built executive dashboards that significantly reduced Mean Time to Resolution (MTTR).</li>
+            <li>Led delivery of <strong>5+ API/EDI integration projects</strong> translating business requirements into technical stories, coordinating cross-functional roadmaps for high-stakes financial transactions.</li>
+            <li>Spearheaded <strong>User Access Recertification</strong> for SOC2/HIPAA audits; implemented RBAC controls achieving <strong>100% compliance</strong> in external reviews.</li>
+            <li>Designed <strong>serverless ETL workflows</strong> (AWS Lambda, EventBridge, S3) and PySpark pipelines for large-scale data transformation supporting analytics and audit reporting.</li>
+            <li>Engineered <strong>ServiceNow ITSM workflows</strong> enforcing ITIL best practices &mdash; automating ticket routing, escalation, and RCA documentation, reducing incident recurrence by <strong>50%</strong>.</li>
+            <li>Secured sensitive member data by managing <strong>SSL/TLS certificate rotation</strong> and OAuth2 enforcement across Apigee Edge and VMware Tanzu environments.</li>
           </ul>
           <div class="tags"><span class="tag">AWS Lambda</span><span class="tag">S3</span><span class="tag">EventBridge</span><span class="tag">Apigee Edge</span><span class="tag">VMware Tanzu</span><span class="tag">Kubernetes</span><span class="tag">Splunk</span><span class="tag">Python</span><span class="tag">ServiceNow</span><span class="tag">MongoDB</span><span class="tag">OracleDB</span><span class="tag">Jenkins</span><span class="tag">REST APIs</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">HIPAA</span></div>
         </div>
@@ -350,11 +353,12 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
           <div class="ero">Product Engineer</div>
           <div class="eog">Johnson &amp; Johnson MedTech &ndash; Abiomed, Inc.</div>
           <ul class="ebl">
-            <li>Led <strong>enterprise labeling platform migration</strong> &mdash; deployed EnLabel, moving 500+ templates with <strong>100% data accuracy</strong> in a regulated environment.</li>
-            <li>Performed <strong>data mapping and validation</strong>, identifying edge cases in FDA-controlled production.</li>
-            <li>Facilitated <strong>UAT sessions</strong> with quality, production, and operations stakeholders.</li>
-            <li>Resolved persistent <strong>SAP S/4 HANA bottlenecks</strong> in lot sizing and material flow.</li>
-            <li>Authored <strong>SOPs and Visio workflow diagrams</strong>, reducing new-hire ramp-up time by <strong>30%</strong>.</li>
+            <li>Led end-to-end system implementation of the <strong>EnLabel enterprise platform</strong>; performed data mapping and validation to migrate <strong>500+ proprietary label templates</strong> from legacy databases with 100% accuracy.</li>
+            <li>Analyzed system requirements and redesigned <strong>SAP S/4 HANA configurations</strong> for lot sizing and material flow, resolving persistent data bottlenecks and improving space utilization by <strong>15%</strong>.</li>
+            <li>Standardized master data governance for <strong>20+ technical SAP PP/QM workflows</strong>; centralized multi-country BOM controls to ensure audit-ready compliance for New Product Introductions.</li>
+            <li>Conducted <strong>UAT and system validation</strong>, gathering cross-functional stakeholder feedback to iteratively configure the platform to meet business and regulatory requirements.</li>
+            <li>Authored <strong>SOPs and Equipment Qualification (IQ/OQ/PQ)</strong> documentation, reducing new hire ramp-up time by <strong>30%</strong>.</li>
+            <li>Participated in internal quality audits, presenting system validation evidence and data integrity reports &mdash; achieving <strong>zero findings</strong> against compliance controls.</li>
           </ul>
           <div class="tags"><span class="tag">SAP S/4 HANA</span><span class="tag">EnLabel</span><span class="tag">Jira</span><span class="tag">MS Visio</span><span class="tag">UAT</span><span class="tag">FDA Controls</span><span class="tag">EU MDR</span></div>
         </div>
@@ -369,11 +373,12 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
           <div class="ero">Project Engineer</div>
           <div class="eog">Sri Andal Paper Mills Private Limited</div>
           <ul class="ebl">
-            <li>Owned the <strong>Procure-to-Pay (P2P) financial workflow</strong> end-to-end.</li>
-            <li>Designed an <strong>ABC-analysis inventory replenishment system</strong> &mdash; reducing storage overhead by <strong>10%</strong>.</li>
-            <li>Modernized inventory reporting in <strong>Tableau</strong>, replacing static spreadsheets with live dashboards.</li>
-            <li>Audited <strong>10,000+ inventory records</strong>, improving accuracy by <strong>25%</strong>.</li>
-            <li>Applied <strong>Lean Six Sigma (Muda elimination)</strong> to material handling to cut travel time.</li>
+            <li>Designed and implemented a logic-based <strong>inventory management system</strong> using ABC analysis and Pull/Kanban methodology, reducing storage overhead by <strong>10%</strong> while sustaining on-time supply availability.</li>
+            <li>Managed end-to-end <strong>Procure-to-Pay (P2P) system workflows</strong> within the ERP platform; performed root cause analysis on data mismatches between ERP and vendor records to resolve high-volume PO and invoice discrepancies.</li>
+            <li>Modernized inventory trend visualization in <strong>Tableau</strong> &mdash; migrated from static spreadsheets to interactive dashboards, shifting planning cadence from weekly to daily and eliminating <strong>16 engineering hours/week</strong>.</li>
+            <li>Audited <strong>10,000+ inventory entries</strong>, identifying duplicate and obsolete records; instituted stricter data-entry protocols enhancing record accuracy by <strong>25%</strong>.</li>
+            <li>Deployed automated <strong>system alerts</strong> for low-stock items, ensuring real-time data integrity and proactive supply chain visibility.</li>
+            <li>Applied <strong>Lean Six Sigma</strong> methodologies to identify process waste (Muda) in material handling workflows, redesigning the facility layout to minimize travel time and streamline operational throughput.</li>
           </ul>
           <div class="tags"><span class="tag">Tableau</span><span class="tag">Lean Six Sigma</span><span class="tag">ABC Analysis</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Procurement</span></div>
         </div>
@@ -389,14 +394,19 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
     <div class="edu">
       <div class="edub">
         <div class="edut">Northeastern University</div>
-        <div class="edud">Master of Science in Industrial Engineering</div>
-        <div class="edus">Boston, Massachusetts &middot; January 2021 &ndash; December 2022</div>
+        <div class="edud">Master of Science</div>
+        <div class="edus">Boston, MA &middot; January 2021 &ndash; December 2022</div>
         <div class="educ">
           <span class="edc">Project Management</span>
           <span class="edc">Operational Research</span>
           <span class="edc">Data Mining in Engineering</span>
           <span class="edc">Data Management for Analytics</span>
         </div>
+      </div>
+      <div class="edub">
+        <div class="edut">Anna University</div>
+        <div class="edud">Bachelor of Engineering</div>
+        <div class="edus">Tamil Nadu, India &middot; July 2015 &ndash; April 2019</div>
       </div>
     </div>
   </div>
@@ -451,10 +461,24 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
 <!-- TOAST -->
 <div class="tst" id="tst">&#128231; <span id="tstxt">Varun notified &mdash; he'll reply soon!</span></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-/* AI-powered chatbot using Gemini via Vercel serverless function */
+/* ============================================================
+   Varun Kumar Portfolio — AI Chatbot + EmailJS
+   Gemini AI via /api/chat (Vercel serverless)
+   EmailJS for direct contact form notifications
+   ============================================================ */
 
-var SYSTEM_PROMPT = `You are a professional assistant for Varun Kumar's portfolio website. Answer questions about Varun concisely and professionally. Only answer questions related to Varun's professional background. Here is everything you need to know about Varun:
+// ─── EmailJS Config ──────────────────────────────────────────
+// Replace these 3 values after setting up emailjs.com
+// See STEP_BY_STEP.md Steps 18-22 for full setup guide
+var EJ_KEY = 'fthM3N6PoQN5tTH2k';    // emailjs.com → Account → API Keys
+var EJ_SVC = 'service_kezfh56';    // emailjs.com → Email Services → Service ID
+var EJ_TPL = 'template_popfmvp';   // emailjs.com → Email Templates → Template ID
+if (EJ_KEY !== 'YOUR_PUBLIC_KEY') { emailjs.init({ publicKey: EJ_KEY }); }
+// ─────────────────────────────────────────────────────────────
+
+var SYSTEM_PROMPT = `You are a professional AI assistant on Varun Kumar's portfolio website. Answer questions about Varun concisely, warmly, and professionally in 2-4 sentences max. Only answer questions about Varun's professional background. If asked something unrelated, politely say you can only answer questions about Varun.
 
 NAME: Varun Kumar Gurusamy Chellamuthu
 ROLE: Senior Systems Engineer
@@ -462,7 +486,7 @@ LOCATION: United States — willing to relocate anywhere within the US
 EMAIL: contactvarunkumargc[at]gmail.com
 LINKEDIN: https://www.linkedin.com/in/varunkumargc/
 
-OPEN TO WORK: Yes, actively open to:
+OPEN TO WORK: Yes, actively seeking:
 - Senior / Staff Systems Engineer
 - Systems Analyst
 - SRE / DevOps Engineer
@@ -470,31 +494,33 @@ OPEN TO WORK: Yes, actively open to:
 - API & Integration Platform Lead
 Preferred industries: Healthcare, Fintech, Enterprise SaaS
 
-EXPERIENCE (4+ years):
-1. Senior Systems Engineer @ Blue Cross Blue Shield of Massachusetts (May 2023 - Present)
-   - Managed 5+ API/EDI integration projects in healthcare financial transactions
-   - Maintained 99.9% uptime, 1M+ daily API calls via Apigee Edge & VMware Tanzu
-   - Built serverless ETL pipelines using AWS Lambda, EventBridge, S3
-   - Splunk dashboards for real-time observability, custom alerting
-   - ServiceNow ITSM workflows for automated ticket routing
-   - HIPAA-compliant IAM, SSL/TLS key management
-   - Python automation scripts for log analysis and data reconciliation
+EXPERIENCE (4+ years total, 3 roles):
+1. Senior Systems Engineer @ Blue Cross Blue Shield of Massachusetts (May 2023 - Present, Boston MA)
+   - Java backend services, API workflows, automated health checks
+   - 99.9% uptime for mission-critical healthcare financial platforms
+   - 50% reduction in release cycle via CI/CD pipelines (Tanzu, Apigee, Edifecs)
+   - 1M+ daily API calls standardized in Splunk; executive dashboards reducing MTTR
+   - 5+ API/EDI integration projects delivered on time
+   - SOC2/HIPAA User Access Recertification — 100% compliance
+   - Serverless ETL (AWS Lambda, EventBridge, S3) and PySpark pipelines
+   - ServiceNow ITSM — 50% reduction in incident recurrence
+   - SSL/TLS and OAuth2 enforcement on Apigee Edge and VMware Tanzu
 
-2. Product Engineer @ Johnson & Johnson MedTech - Abiomed (Jan 2022 - Aug 2022)
-   - Led enterprise labeling platform migration, deployed EnLabel with 500+ templates, 100% data accuracy
-   - Resolved SAP S/4 HANA bottlenecks
-   - Authored SOPs — reduced new-hire ramp-up by 30%
-   - Supported FDA & EU MDR compliance audits
+2. Product Engineer @ Johnson & Johnson MedTech - Abiomed (Jan 2022 - Aug 2022, Danvers MA)
+   - EnLabel platform migration: 500+ label templates, 100% data accuracy
+   - SAP S/4 HANA redesign — 15% improvement in space utilization
+   - SOPs and IQ/OQ/PQ documentation — 30% reduction in new hire ramp-up
+   - Zero findings in compliance audits
 
-3. Project Engineer @ Sri Andal Paper Mills (Jun 2019 - Nov 2020)
-   - Owned full Procure-to-Pay (P2P) financial workflow
-   - ABC-analysis inventory system — reduced storage overhead 10%
-   - Tableau dashboards replacing static spreadsheets
-   - Audited 10,000+ records — improved accuracy by 25%
+3. Project Engineer @ Sri Andal Paper Mills (Jun 2019 - Nov 2020, Tamil Nadu India)
+   - ABC/Kanban inventory system — 10% reduction in storage overhead
+   - Tableau dashboards — eliminated 16 engineering hours/week
+   - Audited 10,000+ records — 25% accuracy improvement
    - Lean Six Sigma Muda elimination
 
 EDUCATION:
-- M.S. Industrial Engineering, Northeastern University, Boston MA (Jan 2021 - Dec 2022)
+- M.S., Northeastern University, Boston MA (Jan 2021 - Dec 2022)
+- B.E., Anna University, Tamil Nadu, India (Jul 2015 - Apr 2019)
 - Coursework: Project Management, Operational Research, Data Mining, Data Management for Analytics
 
 CERTIFICATIONS:
@@ -505,14 +531,12 @@ CERTIFICATIONS:
 
 SKILLS:
 - Cloud: AWS Lambda, S3, EventBridge, CloudWatch, Kubernetes, Docker, VMware Tanzu
-- API: Apigee Edge, REST, SOAP, OAuth2, Swagger
-- Observability: Splunk, ServiceNow ITSM, CloudWatch
-- Data: Snowflake, MongoDB, PostgreSQL, OracleDB
+- API: Apigee Edge, REST, SOAP, OAuth2, Swagger, EDI
+- Observability: Splunk, ServiceNow ITSM, CloudWatch, Jira
+- Data: Snowflake, MongoDB, PostgreSQL, OracleDB, PySpark
 - Code: Python, Java, JavaScript, SQL, PL-SQL, Shell
 - CI/CD: Jenkins, GitHub Actions, Docker
-- Compliance: HIPAA, SOC2, FDA/EU MDR, IAM
-
-Keep answers short (2-4 sentences max), warm, and professional. If asked something unrelated to Varun, politely say you can only answer questions about Varun's professional background.`;
+- Compliance: HIPAA, SOC2, FDA/EU MDR, IAM/RBAC`;
 
 var conversationHistory = [];
 var isOpen  = false;
@@ -536,7 +560,7 @@ btn.addEventListener('click', function () {
     greeted = true;
     setTimeout(function () {
       showTyping(function () {
-        addBot("Hi! I am Varun's AI assistant. Ask me anything about his experience, skills, availability, or how to get in touch!");
+        addBot(`Hi! I'm Varun's AI assistant 👋 Ask me anything about his experience, skills, availability, or how to get in touch!`);
       });
     }, 400);
   }
@@ -568,9 +592,7 @@ function doSend() {
 
 function process(text) {
   addUser(text);
-  // Add to conversation history
   conversationHistory.push({ role: 'user', content: text });
-  // Show typing and call AI
   var typingEl = showTypingReturn();
   callGemini(text, function(response) {
     typingEl.remove();
@@ -578,12 +600,13 @@ function process(text) {
     conversationHistory.push({ role: 'assistant', content: response });
   }, function(error) {
     typingEl.remove();
-    addBot("Sorry, I'm having trouble connecting right now. Please email Varun directly at contactvarunkumargc&#64;gmail&#46;com");
+    addBot(`Sorry, I'm having trouble connecting right now. Please email Varun directly at c&#111;ntactvarunkumargc&#64;gmail&#46;c&#111;m`);
+    // EmailJS fallback — notify Varun of failed AI response
+    sendEmail('AI chatbot error for question: ' + text, 'System');
   });
 }
 
 function callGemini(text, onSuccess, onError) {
-  // Build conversation context for Gemini
   var contents = conversationHistory.map(function(msg) {
     return {
       role: msg.role === 'assistant' ? 'model' : 'user',
@@ -596,7 +619,7 @@ function callGemini(text, onSuccess, onError) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       message: text,
-      history: contents.slice(0, -1), // exclude last user msg, already sent separately
+      history: contents.slice(0, -1),
       systemPrompt: SYSTEM_PROMPT
     })
   })
@@ -609,6 +632,29 @@ function callGemini(text, onSuccess, onError) {
     console.error('Gemini error:', err);
     onError(err);
   });
+}
+
+// ─── EmailJS — Send notification to Varun ────────────────────
+function sendEmail(message, fromName) {
+  if (EJ_KEY === 'YOUR_PUBLIC_KEY') {
+    console.log('[EmailJS not configured] Message:', message);
+    return;
+  }
+  emailjs.send(EJ_SVC, EJ_TPL, {
+    from_name: fromName || 'Portfolio Visitor',
+    message:   message,
+    time:      new Date().toLocaleString()
+  }).then(function() {
+    console.log('EmailJS notification sent');
+  }).catch(function(err) {
+    console.error('EmailJS error:', err);
+  });
+}
+
+// ─── Contact Form Send (triggered from About section) ─────────
+function sendContactEmail(name, message) {
+  showToast('Message sent! Varun will get back to you soon 👋');
+  sendEmail(message, name);
 }
 
 function addUser(text) {
@@ -627,6 +673,15 @@ function addBot(html) {
   scrollDown();
 }
 
+function showTyping(cb) {
+  var d = document.createElement('div');
+  d.className = 'msg bot';
+  d.innerHTML = '<div class="mav">VK</div><div class="tdots"><span></span><span></span><span></span></div>';
+  msgs.appendChild(d);
+  scrollDown();
+  setTimeout(function () { msgs.removeChild(d); cb(); }, 1200);
+}
+
 function showTypingReturn() {
   var d = document.createElement('div');
   d.className = 'msg bot';
@@ -639,7 +694,7 @@ function showTypingReturn() {
 function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
 
 function esc(s) {
-  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
 function showToast(msg) {
@@ -648,5 +703,6 @@ function showToast(msg) {
   setTimeout(function () { tst.classList.remove('show'); }, 4500);
 }
 </script>
+
 </body>
 </html>
